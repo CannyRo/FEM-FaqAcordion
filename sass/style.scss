@@ -1,0 +1,117 @@
+// Imports, Use, Forward, ...
+@use './util/minreset.scss';
+@use './util' as *;
+
+// Règle d'écriture d'une classe :
+// 1) Box
+// 2) Border
+// 3) Background
+// 4) Text
+// 5) Other
+
+// Règle BEM
+// Block = card
+// Element = image, title, describe, devise, value, date, avatar, autor
+// Modifier = here isn't modifier
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: $font-kumnh;
+    font-size: rem(12);
+    background: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    color: $vd-grayish-blue;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: rem(327);
+    min-height: rem(535);
+    margin-top: rem(148);
+    padding-left: rem(24);
+    padding-right: rem(24);
+    border-radius: rem(25);
+    background-color: white;
+    background-image:  url('./images/bg-pattern-mobile.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    
+}
+h1{
+    margin-top: rem(60);
+    margin-bottom: rem(16);
+    text-align: center;
+    font-weight: 700;
+    font-style: normal;
+    font-size: rem(32);
+    line-height: rem(36.8);
+    color: $vd-desaturated-blue;
+}
+button{
+    width: 100%;
+    height: rem(52);
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: rem(0);
+    border: none;
+    border-bottom: rem(2) solid $light-grayish-blue;
+    background-color: white;
+    color: $vd-grayish-blue;
+    text-align: left;
+    font-family: $font-kumnh;
+    font-weight: 400;
+    font-style: normal;
+    font-size: rem(13);
+    line-height: rem(14.95);
+}
+
+.answer{  
+    display: none;
+    padding-bottom: rem(16);
+    font-weight: 400;
+    font-style: normal;
+    line-height: rem(18);
+    color: $dark-grayish-blue;
+
+}
+.unactive{
+    display: none;
+}
+.isActive{
+    min-height: rem(24);
+    padding-top: rem(16);
+    padding-bottom: rem(16);
+    color: $vd-desaturated-blue;
+    font-weight: 700;
+    border: none;
+}
+.isActive img{
+    transform: rotate(180deg);
+}
+.uCanSeeMe{
+    display: block;
+    border-bottom: rem(2) solid $light-grayish-blue;
+}
+
+.hero_mobile{
+    width: rem(237);
+    height: auto;
+    margin-top: rem(-108) ;
+    text-align: center;
+}
+/* -- FOOTER -- */
+footer{
+    margin-top: rem(32);
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
